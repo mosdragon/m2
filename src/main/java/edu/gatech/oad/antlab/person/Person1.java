@@ -31,13 +31,13 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-		char[] charArray = new char[input.length()];
-		for(int i = 2; i < input.length(); i++) {
-			charArray[i - 2] = input.charAt(i);
-		}
-		charArray[input.length() - 2] = input.charAt(0);
-		charArray[input.length() - 1] = input.charAt(1);
-		return new String(charArray);
+        char[] charArray = new char[input.length()];
+        for(int i = 2; i < input.length(); i++) {
+            charArray[i - 2] = input.charAt(i);
+        }
+        charArray[input.length() - 2] = input.charAt(0);
+        charArray[input.length() - 1] = input.charAt(1);
+        return new String(charArray);
 	}
 	
 	/**
