@@ -2,21 +2,24 @@ apply plugin: 'java'
 
 repositories {
     mavenCentral()
-    flatDir {
-        dirs 'lib'
-    }
 }
 
 dependencies {
-    compile name: 'resources'
+    compile files('lib/resources.jar')
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
-sourceCompatibility = 1.5
+sourceCompatibility = 1.7
 version = '1.0'
 jar {
-    manifest {
-        attributes 'Implementation-Title': 'Team Sharkbait M2 - Osama'
+    jar {
+        manifest {
+            attributes "Main-Class": 'edu.gatech.oad.antlab.pkg1.AntLabMain'
+        }
+
+        from {
+            configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        }
     }
 }
 
