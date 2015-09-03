@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+defaultTasks  'task1'
+
+version = '1.0'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Josiah Gradle File', 'Implementation-Version': version , 'Main-Class' : 'pkg1.AntLabMain'
+    }
+}
+
+task task1 << {
+    println 'Josiah Palusky Build File'
+}
+
+dependencies {
+	compile files('lib/resources.jar')
+}
+
+
+

@@ -2,4 +2,6 @@
 out
 *.class
 .idea/workspace.xml
-*.xml
+.idea/*.iws
+.idea/tasks.xml
+
