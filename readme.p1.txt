@@ -1,3 +1,4 @@
 Name: Josiah Palusky
 Gtnumber: 903116893
-Extra credit: ???
+Username: jpalusky3
+Extra credit: a lot
