@@ -58,7 +58,7 @@ import edu.gatech.oad.antlab.pkg2.*;
 
             //Person1 replace P1 with your name
             //and gburdell1 with your gt id
-            Person1 p1 = new Person1("Josiah Palusky");
+            Person1 p1 = new Person1("Josiah David Palusky");
             toPrint += p1.toString("jpalusky3");
 
             //Person2 replace P2 with your name
